@@ -18,6 +18,7 @@ enum Token {
     FALSE,
     PI,
     E,
+    ASSIGN,
     PLUS,
     MINUS,
     TIMES,
@@ -35,7 +36,7 @@ enum Token {
     AND,
     OR,
     NOT,
-    ASSIGN,
+    D_ASSIGN,
     ARROW,
     SEMICOLON,
     COMMA,
@@ -53,7 +54,6 @@ enum Token {
 
 %option c++
 %option noyywrap
-%option debug
 
 DIGIT     [0-9]
 LETTER    [a-zA-Z]
@@ -81,6 +81,7 @@ WS        [ \t\n]
 "PI"            { cout << "PI" << endl; return PI; }
 "E"             { cout << "E" << endl; return E; }
 
+"="             { cout << "ASSIGN" << endl; return ASSIGN; }
 "+"             { cout << "PLUS" << endl; return PLUS; }
 "-"             { cout << "MINUS" << endl; return MINUS; }
 "*"             { cout << "TIMES" << endl; return TIMES; }
@@ -98,7 +99,7 @@ WS        [ \t\n]
 "&"             { cout << "AND" << endl; return AND; }
 "|"             { cout << "OR" << endl; return OR; }
 "!"             { cout << "NOT" << endl; return NOT; }
-":="            { cout << "ASSIGN" << endl; return ASSIGN; }
+":="            { cout << "D_ASSIGN" << endl; return D_ASSIGN; }
 "=>"            { cout << "ARROW" << endl; return ARROW; }
 
 ";"             { cout << "SEMICOLON" << endl; return SEMICOLON; }
