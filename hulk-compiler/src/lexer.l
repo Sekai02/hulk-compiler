@@ -1,55 +1,7 @@
 %{
 #include <iostream>
+#include "../include/tokens.hh"
 using namespace std;
-
-enum Token {
-    FUNCTION = 1,
-    FOR,
-    WHILE,
-    TYPE,
-    INHERITS,
-    NEW,
-    LET,
-    IN,
-    IF,
-    ELIF,
-    ELSE,
-    TRUE,
-    FALSE,
-    PI,
-    E,
-    ASSIGN,
-    PLUS,
-    MINUS,
-    TIMES,
-    DIVIDE,
-    POWER,
-    POW,
-    CONCAT,
-    DCONCAT,
-    EQ,
-    NEQ,
-    LT,
-    GT,
-    LEQ,
-    GEQ,
-    AND,
-    OR,
-    NOT,
-    D_ASSIGN,
-    ARROW,
-    SEMICOLON,
-    COMMA,
-    LPAREN,
-    RPAREN,
-    LBRACE,
-    RBRACE,
-    IDENTIFIER,
-    NUMBER,
-    STRING_LIT,
-    END_OF_FILE
-};
-
 %}
 
 %option c++
