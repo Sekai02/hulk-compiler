@@ -466,10 +466,11 @@ static const flex_int16_t yy_chk[168] =
 #line 1 "src/lexer.l"
 #line 2 "src/lexer.l"
 #include <iostream>
+#include "parser.tab.h"
 #include "../include/tokens.hh"
 using namespace std;
-#line 471 "build/lex.yy.c"
 #line 472 "build/lex.yy.c"
+#line 473 "build/lex.yy.c"
 
 #define INITIAL 0
 
@@ -601,10 +602,10 @@ YY_DECL
 		}
 
 	{
-#line 18 "src/lexer.l"
+#line 19 "src/lexer.l"
 
 
-#line 607 "build/lex.yy.c"
+#line 608 "build/lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -663,252 +664,252 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 20 "src/lexer.l"
-{ cout << "FUNCTION" << endl; return FUNCTION; }
+#line 21 "src/lexer.l"
+{ cout << "FUNCTION" << endl; return token_FUNCTION; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 21 "src/lexer.l"
-{ cout << "FOR" << endl; return FOR; }
+#line 22 "src/lexer.l"
+{ cout << "FOR" << endl; return token_FOR; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 22 "src/lexer.l"
-{ cout << "WHILE" << endl; return WHILE; }
+#line 23 "src/lexer.l"
+{ cout << "WHILE" << endl; return token_WHILE; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 23 "src/lexer.l"
-{ cout << "TYPE" << endl; return TYPE; }
+#line 24 "src/lexer.l"
+{ cout << "TYPE" << endl; return token_TYPE; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 24 "src/lexer.l"
-{ cout << "INHERITS" << endl; return INHERITS; }
+#line 25 "src/lexer.l"
+{ cout << "INHERITS" << endl; return token_INHERITS; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 25 "src/lexer.l"
-{ cout << "NEW" << endl; return NEW; }
+#line 26 "src/lexer.l"
+{ cout << "NEW" << endl; return token_NEW; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 26 "src/lexer.l"
-{ cout << "LET" << endl; return LET; }
+#line 27 "src/lexer.l"
+{ cout << "LET" << endl; return token_LET; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 27 "src/lexer.l"
-{ cout << "IN" << endl; return IN; }
+#line 28 "src/lexer.l"
+{ cout << "IN" << endl; return token_IN; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 28 "src/lexer.l"
-{ cout << "IF" << endl; return IF; }
+#line 29 "src/lexer.l"
+{ cout << "IF" << endl; return token_IF; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 29 "src/lexer.l"
-{ cout << "ELIF" << endl; return ELIF; }
+#line 30 "src/lexer.l"
+{ cout << "ELIF" << endl; return token_ELIF; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 30 "src/lexer.l"
-{ cout << "ELSE" << endl; return ELSE; }
+#line 31 "src/lexer.l"
+{ cout << "ELSE" << endl; return token_ELSE; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 31 "src/lexer.l"
-{ cout << "TRUE" << endl; return TRUE; }
+#line 32 "src/lexer.l"
+{ cout << "TRUE" << endl; return token_TRUE; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 32 "src/lexer.l"
-{ cout << "FALSE" << endl; return FALSE; }
+#line 33 "src/lexer.l"
+{ cout << "FALSE" << endl; return token_FALSE; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 33 "src/lexer.l"
-{ cout << "PI" << endl; return PI; }
+#line 34 "src/lexer.l"
+{ cout << "PI" << endl; return token_PI; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 34 "src/lexer.l"
-{ cout << "E" << endl; return E; }
+#line 35 "src/lexer.l"
+{ cout << "E" << endl; return token_E; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 36 "src/lexer.l"
-{ cout << "ASSIGN" << endl; return ASSIGN; }
+#line 37 "src/lexer.l"
+{ cout << "ASSIGN" << endl; return token_ASSIGN; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 37 "src/lexer.l"
-{ cout << "PLUS" << endl; return PLUS; }
+#line 38 "src/lexer.l"
+{ cout << "PLUS" << endl; return token_PLUS; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 38 "src/lexer.l"
-{ cout << "MINUS" << endl; return MINUS; }
+#line 39 "src/lexer.l"
+{ cout << "MINUS" << endl; return token_MINUS; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 39 "src/lexer.l"
-{ cout << "TIMES" << endl; return TIMES; }
+#line 40 "src/lexer.l"
+{ cout << "TIMES" << endl; return token_TIMES; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 40 "src/lexer.l"
-{ cout << "DIVIDE" << endl; return DIVIDE; }
+#line 41 "src/lexer.l"
+{ cout << "DIVIDE" << endl; return token_DIVIDE; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 41 "src/lexer.l"
-{ cout << "POWER" << endl; return POWER; }
+#line 42 "src/lexer.l"
+{ cout << "POWER" << endl; return token_POWER; }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 42 "src/lexer.l"
-{ cout << "POW" << endl; return POW; }
+#line 43 "src/lexer.l"
+{ cout << "POW" << endl; return token_POW; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 43 "src/lexer.l"
-{ cout << "CONCAT" << endl; return CONCAT; }
+#line 44 "src/lexer.l"
+{ cout << "CONCAT" << endl; return token_CONCAT; }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 44 "src/lexer.l"
-{ cout << "DCONCAT" << endl; return DCONCAT; }
+#line 45 "src/lexer.l"
+{ cout << "DCONCAT" << endl; return token_DCONCAT; }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 45 "src/lexer.l"
-{ cout << "EQ" << endl; return EQ; }
+#line 46 "src/lexer.l"
+{ cout << "EQ" << endl; return token_EQ; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 46 "src/lexer.l"
-{ cout << "NEQ" << endl; return NEQ; }
+#line 47 "src/lexer.l"
+{ cout << "NEQ" << endl; return token_NEQ; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 47 "src/lexer.l"
-{ cout << "LT" << endl; return LT; }
+#line 48 "src/lexer.l"
+{ cout << "LT" << endl; return token_LT; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 48 "src/lexer.l"
-{ cout << "GT" << endl; return GT; }
+#line 49 "src/lexer.l"
+{ cout << "GT" << endl; return token_GT; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 49 "src/lexer.l"
-{ cout << "LEQ" << endl; return LEQ; }
+#line 50 "src/lexer.l"
+{ cout << "LEQ" << endl; return token_LEQ; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 50 "src/lexer.l"
-{ cout << "GEQ" << endl; return GEQ; }
+#line 51 "src/lexer.l"
+{ cout << "GEQ" << endl; return token_GEQ; }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 51 "src/lexer.l"
-{ cout << "AND" << endl; return AND; }
+#line 52 "src/lexer.l"
+{ cout << "AND" << endl; return token_AND; }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 52 "src/lexer.l"
-{ cout << "OR" << endl; return OR; }
+#line 53 "src/lexer.l"
+{ cout << "OR" << endl; return token_OR; }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 53 "src/lexer.l"
-{ cout << "NOT" << endl; return NOT; }
+#line 54 "src/lexer.l"
+{ cout << "NOT" << endl; return token_NOT; }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 54 "src/lexer.l"
-{ cout << "D_ASSIGN" << endl; return D_ASSIGN; }
+#line 55 "src/lexer.l"
+{ cout << "D_ASSIGN" << endl; return token_D_ASSIGN; }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 55 "src/lexer.l"
-{ cout << "ARROW" << endl; return ARROW; }
+#line 56 "src/lexer.l"
+{ cout << "ARROW" << endl; return token_ARROW; }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 57 "src/lexer.l"
-{ cout << "SEMICOLON" << endl; return SEMICOLON; }
+#line 58 "src/lexer.l"
+{ cout << "SEMICOLON" << endl; return token_SEMICOLON; }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 58 "src/lexer.l"
-{ cout << "COMMA" << endl; return COMMA; }
+#line 59 "src/lexer.l"
+{ cout << "COMMA" << endl; return token_COMMA; }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 59 "src/lexer.l"
-{ cout << "LPAREN" << endl; return LPAREN; }
+#line 60 "src/lexer.l"
+{ cout << "LPAREN" << endl; return token_LPAREN; }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 60 "src/lexer.l"
-{ cout << "RPAREN" << endl; return RPAREN; }
+#line 61 "src/lexer.l"
+{ cout << "RPAREN" << endl; return token_RPAREN; }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 61 "src/lexer.l"
-{ cout << "LBRACE" << endl; return LBRACE; }
+#line 62 "src/lexer.l"
+{ cout << "LBRACE" << endl; return token_LBRACE; }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 62 "src/lexer.l"
-{ cout << "RBRACE" << endl; return RBRACE; }
+#line 63 "src/lexer.l"
+{ cout << "RBRACE" << endl; return token_RBRACE; }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 64 "src/lexer.l"
-{ cout << "IDENTIFIER: " << yytext << endl; return IDENTIFIER; }
+#line 65 "src/lexer.l"
+{ cout << "IDENTIFIER: " << yytext << endl; return token_IDENTIFIER; }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 65 "src/lexer.l"
-{ cout << "NUMBER: " << yytext << endl; return NUMBER; }
+#line 66 "src/lexer.l"
+{ cout << "NUMBER: " << yytext << endl; return token_NUMBER; }
 	YY_BREAK
 case 44:
 /* rule 44 can match eol */
 YY_RULE_SETUP
-#line 66 "src/lexer.l"
-{ cout << "STRING_LIT: " << yytext << endl; return STRING_LIT; }
+#line 67 "src/lexer.l"
+{ cout << "STRING_LIT: " << yytext << endl; return token_STRING_LIT; }
 	YY_BREAK
 case 45:
 /* rule 45 can match eol */
 YY_RULE_SETUP
-#line 67 "src/lexer.l"
+#line 68 "src/lexer.l"
 { /* Skip comments */ }
 	YY_BREAK
 case 46:
 /* rule 46 can match eol */
 YY_RULE_SETUP
-#line 68 "src/lexer.l"
+#line 69 "src/lexer.l"
 { /* Skip whitespace */ }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 70 "src/lexer.l"
+#line 71 "src/lexer.l"
 { cerr << "Invalid token: " << yytext << endl; exit(1); }
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
-#line 72 "src/lexer.l"
+#line 73 "src/lexer.l"
 { return 0; }
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 74 "src/lexer.l"
+#line 75 "src/lexer.l"
 ECHO;
 	YY_BREAK
-#line 911 "build/lex.yy.c"
+#line 912 "build/lex.yy.c"
 
 	case YY_END_OF_BUFFER:
 		{
@@ -1869,7 +1870,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 74 "src/lexer.l"
+#line 75 "src/lexer.l"
 
 
 int main() {

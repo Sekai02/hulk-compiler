@@ -8,8 +8,8 @@ BUILD_DIR = build
 
 all: compiler
 
-compiler: $(BUILD_DIR)/lexer.o $(BUILD_DIR)/parser.o $(BUILD_DIR)/main.o
-	$(CC) -o $@ $^
+compiler: $(BUILD_DIR)/parser.o $(BUILD_DIR)/lexer.o  $(BUILD_DIR)/main.o
+	$(CC) -o $@ $^ -ll
 
 $(BUILD_DIR)/lexer.o: $(SRC_DIR)/lexer.l
 	$(FLEX) -o $(BUILD_DIR)/lex.yy.c $<
